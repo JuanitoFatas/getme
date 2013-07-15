@@ -1,0 +1,3 @@
+module Getme
+  VERSION = "0.0.1"
+end
