@@ -8,13 +8,13 @@ Gem::Specification.new do |spec|
   spec.name          = "getme"
   spec.version       = Getme::VERSION
 
-  spec.description   = %q{Get Me Files!}
+  spec.description   = %q{Get Me Vendor Files!}
   spec.summary       = spec.description
 
 
   spec.authors       = ["Juanito Fatas"]
   spec.email         = ["katehuang0320@gmail.com"]
-  spec.homepage      = "https://github.com/JuanitoFatas/get-me-files"
+  spec.homepage      = "https://github.com/JuanitoFatas/getme"
 
   spec.license       = "MIT"
 
