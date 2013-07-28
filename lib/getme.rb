@@ -7,6 +7,11 @@ module Getme
 
   extend self
 
+  # get files from remote
+  def remote_the
+
+  end
+
   def the(what=nil)
     return "What do you want me to download for you?" if what.nil?
     what = what.to_sym
@@ -18,7 +23,8 @@ module Getme
                :not_available
              end
     return "Did not find a candidate of #{what}, typo?" if type == :not_available
-    unless Getme::Vendors[type][what].nil?
+    if Getme::Vendors[type][what]
+    # unless Getme::Vendors[type][what].nil?
       util = Utilities.new
       util.cmd(util.downloader, Getme::Vendors[type][what])
       return 'success!'
